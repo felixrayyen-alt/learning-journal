@@ -12,12 +12,14 @@ Reverse Engineering adalah Sebuah tindakan membongkar sesuatu dengan tujuan untu
 Seperti yang sudah dikutip sebelumnya, Reverse Engineering memiliki banyak fungsi sebagai tindakan yang bisa memahami cara kerja di dalam suatu software maupun hardware. Mari kita ulik apa yang bisa kita dapatkan dari melakukan Reverse Engineering dari 2 aspek tersebut :
 
 **- Reverse Engineering pada Software**
+
     Dalam dunia software, Reverse ini berguna untuk mengerti arsitektur di dalamnya tanpa mengetahui _source code_ aslinya.
     1. Analisis Malware: Membongkar perangkat lunak berbahaya untuk memahami perilakunya, mencari pembuatnya, dan membuat antivirus.
     2. Pengujian Kerentanan: Mengidentifikasi celah keamanan dalam suatu program agar bisa diperbaiki sebelum dieksploitasi pihak tidak bertanggung jawab.
     3. Interoperabilitas:  proses membedah suatu sistem untuk memahami antarmuka dan fungsinya, sehingga sistem atau perangkat lunak baru dapat bekerja secara     lancar dengan sistem lama atau produk pihak ketiga.
 
 **- Reverse Engineering pada Hardware**
+
     Dalam dunia hardware, berarti memahami apa saja part part yang ada didalamnya untuk bisa di analisa atau dimasukkan part baru tanpa merusak part lamanya.
     1. Proses: Benda fisik diukur secara detail (misalnya menggunakan pemindaian 3D) untuk diubah menjadi cetak biru digital (blueprint).
     2. Inovasi Produk: Membantu perusahaan mempelajari produk kompetitor untuk meningkatkan kualitas rancangan produk mereka sendiri.
