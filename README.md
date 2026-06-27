@@ -24,5 +24,11 @@ Seperti yang sudah dikutip sebelumnya, Reverse Engineering memiliki banyak fungs
     1. Proses: Benda fisik diukur secara detail (misalnya menggunakan pemindaian 3D) untuk diubah menjadi cetak biru digital (blueprint).
     2. Inovasi Produk: Membantu perusahaan mempelajari produk kompetitor untuk meningkatkan kualitas rancangan produk mereka sendiri.
 
-**Tools**
+***Teknik Analisis**
+
+    Dalam dunia Reverse Engineering, Teknik Menganalisis suatu objek juga penting untuk tahap yang berkelanjutan. Teknik tersebut yaitu diantaranya :
+    1. Analytic Static : Di teknik ini, Kita sebagai user menganalisa terlebih dahulu apa yang ada di dalam objek tersebut. Seperti halnya jika kita masuk ke sirkel pertemanan baru, pastinya kita menganalisa dulu orangnya seperti apa baru kita bisa berbaur dengan mereka. Sama halnya di dunia Reverse, 
+    
+
+    
     
