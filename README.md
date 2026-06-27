@@ -4,9 +4,11 @@ This repo is about The Journey of me starting to build my Reverse Engineer Journ
 Kenalan dulu ya, Nama saya Muhammad Fadhillah Ardanu , Disini saya ingin membuat perjalanan saya selama belajar Reverse Engineering dan Saya sangat antusias untuk bisa menceritakan kepada pembaca dari repository ini. Jadi, Kalian akan lihat apa saja yang sudah saya pelajari dari perjalanan saya ini. Enjoy!
 
 ***Pengertian***
+
 Reverse Engineering adalah Sebuah tindakan membongkar sesuatu dengan tujuan untuk mereplikasi , menganalisa , mempelajari apa yang ada di dalam objek tersebut. Apa yang dianalisa termasuk dari strukturnya , cara kerjanya dan masih banyak lagi.
 
 ***Fungsi***
+
 Seperti yang sudah dikutip sebelumnya, Reverse Engineering memiliki banyak fungsi sebagai tindakan yang bisa memahami cara kerja di dalam suatu software maupun hardware. Mari kita ulik apa yang bisa kita dapatkan dari melakukan Reverse Engineering dari 2 aspek tersebut :
 
 **- Reverse Engineering pada Software**
