@@ -16,7 +16,7 @@ Seperti yang sudah dikutip sebelumnya, Reverse Engineering memiliki banyak fungs
     Dalam dunia software, Reverse ini berguna untuk mengerti arsitektur di dalamnya tanpa mengetahui _source code_ aslinya.
     1. Analisis Malware: Membongkar perangkat lunak berbahaya untuk memahami perilakunya, mencari pembuatnya, dan membuat antivirus.
     2. Pengujian Kerentanan: Mengidentifikasi celah keamanan dalam suatu program agar bisa diperbaiki sebelum dieksploitasi pihak tidak bertanggung jawab.
-    3. Interoperabilitas:  proses membedah suatu sistem untuk memahami antarmuka dan fungsinya, sehingga sistem atau perangkat lunak baru dapat bekerja         secara lancar dengan sistem lama atau produk pihak ketiga.
+    3. Interoperabilitas:  proses membedah suatu sistem untuk memahami antarmuka dan fungsinya, sehingga sistem atau perangkat lunak baru dapat bekerja secara lancar dengan sistem lama atau produk pihak ketiga.
 
 **- Reverse Engineering pada Hardware**
 
