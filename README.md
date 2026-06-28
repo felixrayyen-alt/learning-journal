@@ -42,4 +42,6 @@ Tidak jauh-jauh dari dunia Reverse, Sudah pasti kita akan berbincang pada Tools 
 Software ini dikembangkan oleh National Security Agency (NSA) yang bersifat _Open Source_. Ghidra menurut saya adalah software yang paling mudah untuk para user yang ingin menganalisa suatu program secara _Static_ dikarenakan Ghidra memiliki fitur pengubah Bahasa mesin (Assembly) menjadi Bahasa Manusia (C/C++). Di samping Ghidra bersifat _Open Source_, Ghidra juga merupakan Software _Multiplatform_ jadi bisa dijalankan di Windows, Linux, MacOS yang di mana memudahkan para User dari berbagai platform.
 
 2. **x64dbg**
+   <img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/8d565eba-421f-420a-b7e3-675d4b9cd1d1" />
+
 Tools ini merupakan tools yang dikhususkan untuk menjalankan _Dynamic Analytic_. Dikarenakan saya belum pernah menggunakan Software ini, Jadi saya mengutip dari websitenya langsung x64dbg. Fitur yang ada dari x64dbg di antaranya ada Memory map Symbol view, Thread view, Source code view, Graph view dan masih banyak lagi. Walaupun Software ini bersifat _Open Source_, x64dbg ini masih dikhususkan untuk Windows.
