@@ -27,8 +27,23 @@ Seperti yang sudah dikutip sebelumnya, Reverse Engineering memiliki banyak fungs
 ***Teknik Analisis**
 
     Dalam dunia Reverse Engineering, Teknik Menganalisis suatu objek juga penting untuk tahap yang berkelanjutan. Teknik tersebut yaitu diantaranya :
-    1. Analytic Static : Di teknik ini, Kita sebagai user menganalisa terlebih dahulu apa yang ada di dalam objek tersebut. Seperti halnya jika kita masuk ke sirkel pertemanan baru, pastinya kita menganalisa dulu orangnya seperti apa baru kita bisa berbaur dengan mereka. Sama halnya di dunia Reverse, 
+    1. Analytic Static : 
     
+        Di teknik ini, Kita sebagai user menganalisa terlebih dahulu apa yang ada di dalam objek tersebut. Seperti halnya jika di momen saat mobil kita dalam keadaan mati. kita buka kap mesinnya, kita pelajari buku manualnya, kita urutkan jalur kabelnya satu per satu pake senter, dan kita catat merek businya. Sama halnya di dunia Reverse, kita sebagai user menganalisa terlebih dahulu bentuknya seperti apa secara keseluruhan tanpa kita menjalankkan program tersebut dibandingkan kita langsung melakukan _Dynamic Analytic_.
+
+    2. Dynamic Analytic : 
+    
+        Seperti yang sudah saya singgung sebelumnya, _Dynamic Analytic_ adalah analisis secara langsung cara kerja dari objek tersebut bagaimana. Seperti momen saat kita masuk ke dalam mobil, masukin kunci, dan menyalakan mesinnya. kita bawa mobil itu jalan-jalan di jalanan. Sambil jalan, kita pasang alat sensor di mesin buat ngeliat langsung berapa suhu radiatornya saat digas, atau bensin mana yang disedot pas kita belok. Dalam dunia Reverse, _Dynamic Analytic_ dilaukan ketika program dijalankan. Misalnya, saat kita menganalisa malware, kita langsung menganalisa pada saat malware itu bekerja pada PC kita, mulai dari prosesnya , teknik penyerangannya , dampaknya dan lain lain.
+
+
+***Tools**
+
+    Tidak jauh jauh dari dunia Reverse, Sudah pasti kita akan berbincang pada Tools yang kita pakai untuk melakukan Reverse Engineering. Tools-tools dibawah merupakan Tools yang biasanya dipakai untuk Penganalisaan secara _Static_ maupun _Dynamic_ diantaranya yaitu :
+
+    1. Ghidra SE
+        
+        
+        
 
     
     
