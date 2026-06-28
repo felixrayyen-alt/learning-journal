@@ -24,7 +24,7 @@ Dalam dunia hardware, berarti memahami apa saja part-part yang ada di dalamnya u
 1. **Proses:** Benda fisik diukur secara detail (misalnya menggunakan pemindaian 3D) untuk diubah menjadi cetak biru digital (blueprint).
 2. **Inovasi Produk:** Membantu perusahaan mempelajari produk kompetitor untuk meningkatkan kualitas rancangan produk mereka sendiri.
 
-## Teknik Analisis
+## Metode Analisis
 
 Dalam dunia Reverse Engineering, Teknik Menganalisis suatu objek juga penting untuk tahap yang berkelanjutan. Teknik tersebut yaitu di antaranya:
 
@@ -45,3 +45,33 @@ Software ini dikembangkan oleh National Security Agency (NSA) yang bersifat _Ope
    <img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/8d565eba-421f-420a-b7e3-675d4b9cd1d1" />
 
 Tools ini merupakan tools yang dikhususkan untuk menjalankan _Dynamic Analytic_. Dikarenakan saya belum pernah menggunakan Software ini, Jadi saya mengutip dari websitenya langsung x64dbg. Fitur yang ada dari x64dbg di antaranya ada Memory map Symbol view, Thread view, Source code view, Graph view dan masih banyak lagi. Walaupun Software ini bersifat _Open Source_, x64dbg ini masih dikhususkan untuk Windows.
+
+## Teknik Saat Penganalisaan
+
+   Setelah kita memahami metode penganalisaan, Kita masuk pada tekniknya yaitu ada **Disassembler** & **Decompiler**. Kita bayangkan kita dapet kado sebuah Robot Lego raksasa yang udah jadi, dan bata-batanya dilem super kuat dari pabriknya. Robot yang udah jadi ini adalah ibarat Program Aplikasi (Kode Biner yang cuma dipahami komputer). Lu pengen banget tau gimana cara ngerakit robot ini dari awal. Disinilah 2 Teknik ini bekerja seperti dibawah ini :
+
+1. **Disassembler**
+
+   Disassembler adalah software yang menerjemahkan kode mesin menjadi bahasa mesin. Jadi, Kita masukkan robot ini ke pembongkar mesin. Setelah kita bongkar, ternyata memunculkan intruksi seperti "Ambil satu bata merah 2x4. Geser 5 cm ke kanan. Pasang bata merah. Ambil satu bata biru 1x2. Geser 3 cm ke atas. Pasang bata biru." yang dimana disini tidak memiliki Step yang jelas untuk merakit ulang dari robot. Jika manusia dihadapkan intruksi yang sebanyak itu pasti sudah kewalahan. Jadi, Tujuan asli dari Disassembler yaitu :
+
+- Mengintip Instruksi Asli: Ngasih liat kita instruksi paling mentah dari sebuah program (kayak MOV, PUSH, JMP).
+  
+- Modifikasi / Patching: Karena bahasanya sangat presisi per langkah, kita bisa dengan gampang ngubah satu instruksi. Misalnya, instruksi "Lompat kalau Password Salah" kita ganti jadi "Lompat kalau Password Benar".
+  
+- Jadi Penyelamat: Kadang programnya diproteksi atau dibikin ribet sama hacker, sehingga mesin Decompiler bingung dan error. Kalau udah gini, Disassembler adalah jalan ninja terakhir karena dia gak pernah gagal ngebaca kode mesin.
+   <img width="680" height="397" alt="image" src="https://github.com/user-attachments/assets/089b5b29-3b8c-427c-a5f0-3084f9eaf36b" />
+
+
+2. **Decompiler**
+
+   Decompiler adalah Software yang menerjemahkan bahasa mesin menjadi bahasa pemrograman. Karena kita tidak mungkin membaca banyak jutaan intruksi dari Disassembler maka kita masuk ke pembongkar mesin kedua yaitu Decompiler, Disini Decompiler sudah merangkum intruksi-intruksi tadi menjadi rangkuman yang jelas dan mudah dibaca. Contoh hasilnya jadi seperti "Langkah 1: Membuat Lengan Kanan. Susun bagian ini untuk membentuk tangan. Langkah 2: Membuat Kepala."
+   Decompiler menerjemahkan langkah-langkah mesin tadi kembali menjadi bahasa pemrograman tingkat tinggi yang mudah dipahami logikanya oleh manusia. Jadi , tujuan aslinya yaitu :
+   
+- Menghemat Waktu Analisa: Bayangin baca jutaan baris kode Assembly, mata pasti berdarah bang wkwkwk. Decompiler merangkum itu semua jadi bahasa yang lebih gampang dibaca (biasanya bahasa C atau C++).
+
+- Melihat "Big Picture" (Gambaran Besar): Tujuan utamanya biar lu bisa langsung paham alur cerita programnya. Lu bisa dengan cepat ngeliat struktur if-else, looping (perulangan), dan rumus matematika aslinya tanpa harus pusing mikirin memori komputer.
+   
+   <img width="1130" height="955" alt="Screenshot 2026-06-28 184747" src="https://github.com/user-attachments/assets/bed0c859-8427-4808-afd9-ff4cdac65173" />
+   
+
+
