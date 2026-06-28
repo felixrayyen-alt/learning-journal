@@ -48,7 +48,7 @@ Tools ini merupakan tools yang dikhususkan untuk menjalankan _Dynamic Analytic_.
 
 ## Teknik Saat Penganalisaan
 
-   Setelah kita memahami metode penganalisaan, Kita masuk pada tekniknya yaitu ada **Disassembler** & **Decompiler**. Kita bayangkan kita dapet kado sebuah Robot Lego raksasa yang udah jadi, dan bata-batanya dilem super kuat dari pabriknya. Robot yang udah jadi ini adalah ibarat Program Aplikasi (Kode Biner yang cuma dipahami komputer). Lu pengen banget tau gimana cara ngerakit robot ini dari awal. Disinilah 2 Teknik ini bekerja seperti dibawah ini :
+   Setelah kita memahami metode penganalisaan, Kita masuk pada tekniknya yaitu ada **Disassembler** & **Decompiler**. Kita bayangkan kita dapet kado sebuah Robot Lego raksasa yang udah jadi, dan bata-batanya dilem super kuat dari pabriknya. Robot yang udah jadi ini adalah ibarat Program Aplikasi (Kode Biner yang cuma dipahami komputer). Kita pengen banget tau gimana cara ngerakit robot ini dari awal. Disinilah 2 Teknik ini bekerja seperti dibawah ini :
 
 1. **Disassembler**
 
@@ -58,20 +58,50 @@ Tools ini merupakan tools yang dikhususkan untuk menjalankan _Dynamic Analytic_.
   
 - Modifikasi / Patching: Karena bahasanya sangat presisi per langkah, kita bisa dengan gampang ngubah satu instruksi. Misalnya, instruksi "Lompat kalau Password Salah" kita ganti jadi "Lompat kalau Password Benar".
   
-- Jadi Penyelamat: Kadang programnya diproteksi atau dibikin ribet sama hacker, sehingga mesin Decompiler bingung dan error. Kalau udah gini, Disassembler adalah jalan ninja terakhir karena dia gak pernah gagal ngebaca kode mesin.
+- Jadi Penyelamat: Kadang programnya diproteksi atau dibikin ribet sama hacker, sehingga mesin Decompiler bingung dan error. Kalo udah gini, Disassembler adalah jalan terakhir karena sejatinya kode mesin itu sudah induk dari induk dari suatu program.
    <img width="680" height="397" alt="image" src="https://github.com/user-attachments/assets/089b5b29-3b8c-427c-a5f0-3084f9eaf36b" />
 
 
 2. **Decompiler**
 
-   Decompiler adalah Software yang menerjemahkan bahasa mesin menjadi bahasa pemrograman. Karena kita tidak mungkin membaca banyak jutaan intruksi dari Disassembler maka kita masuk ke pembongkar mesin kedua yaitu Decompiler, Disini Decompiler sudah merangkum intruksi-intruksi tadi menjadi rangkuman yang jelas dan mudah dibaca. Contoh hasilnya jadi seperti "Langkah 1: Membuat Lengan Kanan. Susun bagian ini untuk membentuk tangan. Langkah 2: Membuat Kepala."
-   Decompiler menerjemahkan langkah-langkah mesin tadi kembali menjadi bahasa pemrograman tingkat tinggi yang mudah dipahami logikanya oleh manusia. Jadi , tujuan aslinya yaitu :
+   Decompiler adalah Software yang menerjemahkan bahasa mesin menjadi bahasa pemrograman. Lanjutan dari analogi lego robot raksasa, Karena kita tidak mungkin membaca banyak jutaan intruksi dari Disassembler maka kita masuk ke pembongkar mesin kedua yaitu Decompiler, Disini Decompiler sudah merangkum intruksi-intruksi tadi menjadi rangkuman yang jelas dan mudah dibaca. Contoh hasilnya jadi seperti "Langkah 1: Membuat Lengan Kanan. Susun bagian ini untuk membentuk tangan. Langkah 2: Membuat Kepala." Decompiler menerjemahkan langkah-langkah mesin tadi kembali menjadi bahasa pemrograman tingkat tinggi yang mudah dipahami logikanya oleh manusia. Jadi , tujuan aslinya yaitu :
    
-- Menghemat Waktu Analisa: Bayangin baca jutaan baris kode Assembly, mata pasti berdarah bang wkwkwk. Decompiler merangkum itu semua jadi bahasa yang lebih gampang dibaca (biasanya bahasa C atau C++).
+- Menghemat Waktu Analisa: Decompiler merangkum semua jadi bahasa yang lebih gampang dibaca (biasanya bahasa C atau C++).
 
-- Melihat "Big Picture" (Gambaran Besar): Tujuan utamanya biar lu bisa langsung paham alur cerita programnya. Lu bisa dengan cepat ngeliat struktur if-else, looping (perulangan), dan rumus matematika aslinya tanpa harus pusing mikirin memori komputer.
+- Melihat Gambaran Besar: Tujuan utamanya biar kita bisa langsung paham alur cerita programnya karena sudah terlihat blueprintnya seperti apa.Kita bisa dengan cepat ngeliat struktur if-else, looping (perulangan), dan rumus matematika aslinya tanpa harus pusing mikirin memori komputer.
    
    <img width="1130" height="955" alt="Screenshot 2026-06-28 184747" src="https://github.com/user-attachments/assets/bed0c859-8427-4808-afd9-ff4cdac65173" />
    
+## Apa yang sudah saya pelajari dari Reverse Engineering
+
+   Disini saya sedikit cerita bagaimana saya bisa mempelajari dari Reverse, Jujur saya sedikit kewalahan saat dihadapkan tugas yang langsung menganalisa malware secara Real-time karena saya belum terbiasa dengan bahasa mesin yang serumit itu. Bahkan saya pun masih belum banyak terbiasa dengan bahasa pemrograman tingkat atas seperti Bahasa C / C++. Oleh karena itu, Saya memulai ulang metode belajar saya dari awal yaitu mengerti fundamentalnya terlebih dahulu dengan mengerti **Bagaimana Reverse itu bekerja?**, **Apa yang membuat Reverse serumit itu?**, **Bagaimana cara mengerti poin penting dari cara kerja Reverse ini?**. Jadi, Saya memutuskan untuk belajar bahasanya terlebih dahulu yaitu Bahasa C yang dimana fokus pada poin penting yang mengarah ke mekanisme Reverse itu sendiri. Disini saya sudah merangkum apa yang sudah saya pelajari dari Bahasa C:
+
+### Memori, Pointer, & Array
+
+1. POINTER (Item: Peta Harta Karun)
+Variabel Biasa (int x = 10;) = Peti Emas. Isinya 10 Gold, ditaruh di Koordinat Hutan (&x).
+Pointer (b) = Kertas Peta Harta Karun. Isinya murni cuma tulisan teks Koordinat Hutan (&x). Di dalem kertas ini nggak ada emasnya.
+Mantra Bintang (*b) = Skill Teleport & Jarah. Lu baca koordinat di kertas peta, lu teleport ke lokasi peti, lu ambil emasnya.
+Mantra Dan (&b) = Laci Meja. Tempat fisik lu nyimpen si kertas peta itu sendiri di basecamp lu.
+
+3. MEMORY MANAGEMENT (Sistem Penyimpanan Barang)
+STACK = Tas Inventory Sementara (Dungeon).
+Semua peti otomatis masuk sini pas lu masuk dungeon (fungsi).
+Pas lu keluar dungeon (return 0;), tasnya dibakar otomatis sama Game Engine.
+Kapasitasnya mini, kalau kepenuhan bakal Stack Overflow (Game Crash).
+HEAP = Gudang Pusat Kota.
+Kapasitasnya raksasa, tapi harus sewa manual pake koin mantra malloc().
+Penjaga gudang ga ngasih slotnya ke tangan lu, tapi cuma ngasih Resi Koordinat (Pointer).
+Kalau lu udah ga pake, lu WAJIB pamit dan balikin slotnya pake mantra free().
+Memory Leak = Lu kabur dari game tapi lupa nge-free() gudang. Slotnya kekunci jadi sampah angker, bikin RAM PC lu abis dan Blue Screen.
+
+5. ARRAY & BUFFER OVERFLOW (Barisan Peti & Mantra Terlarang)
+Array (rak_peti[3];) = Rak Panjang Isi 3 Peti Berjejer.
+Di level mesin (Assembly), nama rak itu dihapus. Game Engine cuma nginget Koordinat Peti Nomor 0 (Base Address).
+Mau ke peti selanjutnya? Tinggal pake rumus Lompatan (Offset).
+Buffer Overflow = Meluberkan Rak.
+Bahasa C itu cuek, ga punya penjaga batas rak (No Bounds Checking). Lu dikasih rak isi 3 peti, tapi lu paksa masukin barang ke peti gaib nomor 4 (rak_peti[3] = 999). C bakal nurut aja.
+Di dalam Stack, kalau lu luberin data ini sengaja sampai tumpah berantakan, data lu bakal menimpa Return Address (Tiket Pulang) dari dungeon.
+Hacker memanfaatkan ini buat ganti Tiket Pulang lu pake koordinat Mantra Terlarang (Shellcode) mereka. Pas fungsi selesai, komputer malah ngejalanin virus si hacker.
 
 
