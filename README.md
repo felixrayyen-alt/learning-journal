@@ -37,7 +37,7 @@ Dalam dunia Reverse Engineering, Teknik Menganalisis suatu objek juga penting un
 Tidak jauh-jauh dari dunia Reverse, Sudah pasti kita akan berbincang pada Tools yang kita pakai untuk melakukan Reverse Engineering. Tools-tools di bawah merupakan Tools yang biasanya dipakai untuk Penganalisaan secara _Static_ maupun _Dynamic_ di antaranya yaitu:
 
 1. **Ghidra SE**
-<img width="542" height="369" alt="image" src="https://github.com/user-attachments/assets/2cc18c2c-fe2e-48bd-9970-dca07fb2d325" />
+<img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/2cc18c2c-fe2e-48bd-9970-dca07fb2d325" />
 
 Software ini dikembangkan oleh National Security Agency (NSA) yang bersifat _Open Source_. Ghidra menurut saya adalah software yang paling mudah untuk para user yang ingin menganalisa suatu program secara _Static_ dikarenakan Ghidra memiliki fitur pengubah Bahasa mesin (Assembly) menjadi Bahasa Manusia (C/C++). Di samping Ghidra bersifat _Open Source_, Ghidra juga merupakan Software _Multiplatform_ jadi bisa dijalankan di Windows, Linux, MacOS yang di mana memudahkan para User dari berbagai platform.
 
