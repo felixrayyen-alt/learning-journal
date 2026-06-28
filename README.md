@@ -48,8 +48,9 @@ Seperti yang sudah dikutip sebelumnya, Reverse Engineering memiliki banyak fungs
 
     2. x64dbg
 
-        Tools ini merupakan tools yang dikhususkan untuk menjalankan _Dynamic Analytic_. 
-        
+        Tools ini merupakan tools yang dikhususkan untuk menjalankan _Dynamic Analytic_. DIkarenakan saya belum pernah menggunakan Software ini, Jadi saya mengkutip dari websitenya langsung x64dbg. Fitur yang ada dari x64dbg diantaranya ada Memory map Symbol view, Thread view, Source code view, Graph view dan masih banyak lagi. Walaupun Software ini bersifat _Open Source_, x64dbg ini masih dikhususkan untuk Windows.
+
+
         
         
 
