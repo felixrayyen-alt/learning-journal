@@ -107,3 +107,9 @@ Hacker memanfaatkan ini buat ganti Tiket Pulang lu pake koordinat Mantra Terlara
 ## Apa yang masih bingung
 Selama saya mendalami dunia Reverse Engineering, Saya mendapati banyak hal yang baru untuk dipelajari dan menurut saya Wajar akan kebingungan dan sedikit bertanya-tanya tentang hal itu. Diantara yang saya belum memahami secara penuh yaitu :
 
+### Operasi Bitwise
+Bingung karena rumusnya udah gak cuma tambah-tambahan atau modulo biasa, tapi udah mainan operasi gaib komputer kayak XOR (^), Shift Right (>>), atau Shift Left (<<).
+
+### Control Flow
+Bingung karena fungsi pengecekannya sengaja dibikin beranak-pinak atau lompat-lompat (jump/call), jadi saya pusing nyari di mana gerbang utama penentu password-nya yang asli.
+
