@@ -104,4 +104,6 @@ Bahasa C itu cuek, ga punya penjaga batas rak (No Bounds Checking). Lu dikasih r
 Di dalam Stack, kalau lu luberin data ini sengaja sampai tumpah berantakan, data lu bakal menimpa Return Address (Tiket Pulang) dari dungeon.
 Hacker memanfaatkan ini buat ganti Tiket Pulang lu pake koordinat Mantra Terlarang (Shellcode) mereka. Pas fungsi selesai, komputer malah ngejalanin virus si hacker.
 
+## Apa yang masih bingung
+Selama saya mendalami dunia Reverse Engineering, Saya mendapati banyak hal yang baru untuk dipelajari dan menurut saya Wajar akan kebingungan dan sedikit bertanya-tanya tentang hal itu. Diantara yang saya belum memahami secara penuh yaitu :
 
