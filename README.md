@@ -107,7 +107,7 @@ Memory Leak = Lu kabur dari game tapi lupa nge-free() gudang. Slotnya kekunci ja
  Di level mesin (Assembly), nama rak itu dihapus. Game Engine cuma nginget Koordinat Peti Nomor 0 (Base Address). Mau ke peti selanjutnya? Tinggal pake rumus Lompatan (Offset).
   
 - Buffer Overflow = Meluberkan Rak.
-- 
+
 Bahasa C itu cuek, ga punya penjaga batas rak (No Bounds Checking). Lu dikasih rak isi 3 peti, tapi lu paksa masukin barang ke peti gaib nomor 4 (rak_peti[3] = 999). C bakal nurut aja. Di dalam Stack, kalau lu luberin data ini sengaja sampai tumpah berantakan, data lu bakal menimpa Return Address (Tiket Pulang) dari dungeon.
 Hacker memanfaatkan ini buat ganti Tiket Pulang lu pake koordinat Mantra Terlarang (Shellcode) mereka. Pas fungsi selesai, komputer malah ngejalanin virus si hacker.
 
