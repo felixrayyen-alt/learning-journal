@@ -79,37 +79,47 @@ Tools ini merupakan tools yang dikhususkan untuk menjalankan _Dynamic Analytic_.
 ### Memori, Pointer, & Array
 
 1. POINTER (Item: Peta Harta Karun)
+   
 Variabel Biasa (int x = 10;) = Peti Emas. Isinya 10 Gold, ditaruh di Koordinat Hutan (&x).
 Pointer (b) = Kertas Peta Harta Karun. Isinya murni cuma tulisan teks Koordinat Hutan (&x). Di dalem kertas ini nggak ada emasnya.
 Mantra Bintang (*b) = Skill Teleport & Jarah. Lu baca koordinat di kertas peta, lu teleport ke lokasi peti, lu ambil emasnya.
 Mantra Dan (&b) = Laci Meja. Tempat fisik lu nyimpen si kertas peta itu sendiri di basecamp lu.
 
 3. MEMORY MANAGEMENT (Sistem Penyimpanan Barang)
-STACK = Tas Inventory Sementara (Dungeon).
+   
+- STACK = Tas Inventory Sementara (Dungeon).
+  
 Semua peti otomatis masuk sini pas lu masuk dungeon (fungsi).
 Pas lu keluar dungeon (return 0;), tasnya dibakar otomatis sama Game Engine.
 Kapasitasnya mini, kalau kepenuhan bakal Stack Overflow (Game Crash).
-HEAP = Gudang Pusat Kota.
+
+- HEAP = Gudang Pusat Kota.
+  
 Kapasitasnya raksasa, tapi harus sewa manual pake koin mantra malloc().
 Penjaga gudang ga ngasih slotnya ke tangan lu, tapi cuma ngasih Resi Koordinat (Pointer).
 Kalau lu udah ga pake, lu WAJIB pamit dan balikin slotnya pake mantra free().
 Memory Leak = Lu kabur dari game tapi lupa nge-free() gudang. Slotnya kekunci jadi sampah angker, bikin RAM PC lu abis dan Blue Screen.
 
 5. ARRAY & BUFFER OVERFLOW (Barisan Peti & Mantra Terlarang)
-Array (rak_peti[3];) = Rak Panjang Isi 3 Peti Berjejer.
-Di level mesin (Assembly), nama rak itu dihapus. Game Engine cuma nginget Koordinat Peti Nomor 0 (Base Address).
-Mau ke peti selanjutnya? Tinggal pake rumus Lompatan (Offset).
-Buffer Overflow = Meluberkan Rak.
-Bahasa C itu cuek, ga punya penjaga batas rak (No Bounds Checking). Lu dikasih rak isi 3 peti, tapi lu paksa masukin barang ke peti gaib nomor 4 (rak_peti[3] = 999). C bakal nurut aja.
-Di dalam Stack, kalau lu luberin data ini sengaja sampai tumpah berantakan, data lu bakal menimpa Return Address (Tiket Pulang) dari dungeon.
+   
+- Array (rak_peti[3];) = Rak Panjang Isi 3 Peti Berjejer.
+
+ Di level mesin (Assembly), nama rak itu dihapus. Game Engine cuma nginget Koordinat Peti Nomor 0 (Base Address). Mau ke peti selanjutnya? Tinggal pake rumus Lompatan (Offset).
+  
+- Buffer Overflow = Meluberkan Rak.
+- 
+Bahasa C itu cuek, ga punya penjaga batas rak (No Bounds Checking). Lu dikasih rak isi 3 peti, tapi lu paksa masukin barang ke peti gaib nomor 4 (rak_peti[3] = 999). C bakal nurut aja. Di dalam Stack, kalau lu luberin data ini sengaja sampai tumpah berantakan, data lu bakal menimpa Return Address (Tiket Pulang) dari dungeon.
 Hacker memanfaatkan ini buat ganti Tiket Pulang lu pake koordinat Mantra Terlarang (Shellcode) mereka. Pas fungsi selesai, komputer malah ngejalanin virus si hacker.
 
 ## Apa yang masih bingung
+
 Selama saya mendalami dunia Reverse Engineering, Saya mendapati banyak hal yang baru untuk dipelajari dan menurut saya Wajar akan kebingungan dan sedikit bertanya-tanya tentang hal itu. Diantara yang saya belum memahami secara penuh yaitu :
 
 ### Operasi Bitwise
+
 Bingung karena rumusnya udah gak cuma tambah-tambahan atau modulo biasa, tapi udah mainan operasi gaib komputer kayak XOR (^), Shift Right (>>), atau Shift Left (<<).
 
 ### Control Flow
+
 Bingung karena fungsi pengecekannya sengaja dibikin beranak-pinak atau lompat-lompat (jump/call), jadi saya pusing nyari di mana gerbang utama penentu password-nya yang asli.
 
